@@ -1,0 +1,565 @@
+@import 'commont';
+body{
+    .header-1{
+        box-shadow: (0px 4px 20px rgba(0, 0, 0, 0.1));
+        header{
+            background:  $color-orange;
+            padding: 15px 0;
+            @include Res(m-4){
+                display: none;
+            }
+            .header-top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center ;
+                line-height: 0;
+                .v-top-socials{
+                    display: flex;
+                    gap: 20px;
+                }
+                .v-top-contact{
+                    display: flex;
+                    gap: 25px;
+                    .mail, .phone{
+                        display: flex;
+                        gap: 5px;
+                        p{
+                            margin: 0;
+                            color: $color-white;
+                            font-family: $Inter-Medium;
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .section-menu-1{
+            // display: none;
+            .header-bot{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .logo{
+                    flex: 0.57;
+                    @include Res(m-9){
+                        flex: 0.4;
+                    }
+                    a{
+                        text-decoration: none;
+                        picture{
+                            width: 100%;
+                            height: 0;
+                            padding-top: calc(0.358744 * 100%);
+                            position: relative;
+                            display: block;
+                            overflow: hidden;
+                            img{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+                .menu{
+                    display: flex;
+                    gap: 40px;
+                    align-items: center;
+                    @include Res(m-9){
+                            padding: 20px 30px;
+                            position: fixed;
+                            width: 350px;
+                            height: 100%;
+                            top: 0;
+                            background: #fff;
+                            z-index: 999;
+                            left: 0;
+                            flex-direction: column;
+                            transform: translateX(-100%);
+                            -webkit-transition: all .3s ease-in-out;
+                            transition: all .3s ease-in-out;
+                            align-items: unset;
+                            gap: 30px;
+                    }
+                    @include Res(m-4){
+                        gap: 10px;
+                    }
+                    .logo-menu{
+                        display: none;
+                        a{
+                            text-decoration: none;
+                            picture{
+                                display: block;
+                                position: relative;
+                                width: 60%;
+                                height: 0;
+                                overflow: hidden;
+                                padding-top: calc(0.28260 * 100%);
+                                img{
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: scale-down;
+                                }
+                            }
+                        }
+                        @include Res(m-9){
+                            display: block;
+                        }
+                    }
+                    .menu-list{
+                        @include Res(m-9){
+                            order: 2;
+                        }
+                        ul{
+                            display: flex;
+                            gap: 40px;
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            @include Res(m-14){
+                                gap: 30px;
+                            }
+                            @include Res(m-9){
+                                display: block;
+                            }
+                            li{
+                                padding: 30px 0;
+                                position: relative;
+                                @include Res(m-9){
+                                    padding: 10px 0;
+                                }
+                                &:hover{
+                                    &::before{
+                                        width: 100%;
+                                    }
+                                    .menu-dropdown{
+                                        display: block;
+                                    }
+                                }
+                                &::before{
+                                    position: absolute;
+                                    content: "";
+                                    height: 3px;
+                                    width: 0.01%;
+                                    background: $color-orange;
+                                    bottom: 0;
+                                    -webkit-transition: all .3s ease-in-out;
+                                    transition: all .3s ease-in-out;
+                                }
+                                a{
+                                    font-size: 14px;
+                                    font-family: $Inter-SemiBold;
+                                    color: $color-black;
+                                    text-decoration: none;
+                                    line-height: 17px;
+                                }
+                                .menu-dropdown{
+                                    position: absolute;
+                                    display: none;
+                                    width: 245px;
+                                    padding: 30px 25px;    
+                                    background: $color-white;
+                                    top: 80px;
+                                    box-shadow: 0px 4px 20px 0px #0000001A;
+                                    border-radius: 0px 0px 5px 5px;
+                                    z-index: 11;
+                                    @include Res(m-9){
+                                        width: unset;
+                                        box-shadow: unset;
+                                        padding: 30px 25px 10px;
+                                        position: unset;
+                                    }
+                                    @include Res(m-4){
+                                        padding: 15px 25px 10px;
+                                    }
+                                    li{
+                                        padding: 0 0 20px;
+                                        @include Res(m-4){
+                                            padding: 0 0 10px;
+                                        }
+                                        &:nth-last-child(1){
+                                            padding: 0;
+                                        }
+                                        &::before{
+                                            display: none;
+                                        }
+                                        a{
+                                            font-family: $Inter-Medium;
+                                        }
+                                    }            
+                                }
+                            }
+                        }
+                    }
+                    .search{
+                        @include Res(m-9){
+                            order: 1;
+                        }
+                        form{
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            background: $color-gray;
+                            border-radius: 30px;
+                            padding: 15px 22px;
+                            input{
+                                background: unset;
+                                outline: none;
+                                font-size: 12px;
+                                line-height: 15px;
+                                color: $color-smoke;
+                                font-family: $Inter-Regular;
+                                border: none;
+                                &::placeholder{
+                                    color: $color-smoke;
+                                    font-size: 12px;
+                                    font-family: $Inter-Regular;
+                                }
+                            }
+                            picture{
+                                line-height: 0;
+                            }
+                        }
+                    }
+                    .close{
+                        display: none;
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        top: 5%;
+                        right: 10%;
+                        @include Res(m-9){
+                            display: block;
+                        }
+                        @include Res(m-4){
+                            top: 8%;
+                        }
+                        &::before{
+                            content: "";
+                            font-family: $font-anwesome;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            font-size: 28px;
+                            color: $color-black;
+                        }
+                    }
+                    .contact-mobie{
+                        display: none;
+                        order: 3;
+                        @include Res(m-4){
+                            display: block;
+                            .v-top-socials{
+                                display: flex;
+                                gap: 10px;
+                            }
+                            .v-top-contact{
+                                display: flex;
+                                gap: 20px;
+                                flex-direction: column;
+                                margin-bottom: 20px;
+                                .mail,.phone{
+                                    display: flex;
+                                    gap: 5px;
+                                    align-items: center;
+                                    line-height: 0;
+                                    p{
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .active-menu{
+                    transform: translateX(0%);
+                }
+                .btn-menu{
+                    height: 24px;
+                    width: 24px;
+                    position: relative;
+                    display: none;
+                    @include Res(m-9){
+                        display: block;
+                    }
+                    &::before{
+                        content: "";
+                        font-family: $font-anwesome;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .section-menu-2{
+            display: none;
+            .header-bot-1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 95px;
+                @include Res(m-9){
+                    display: none;
+                }
+                .menu{
+                    ul{
+                        list-style: none;
+                        display: flex;
+                        gap: 40px;
+                        li{
+                            a{
+                                text-decoration: none;
+                                color: $color-black;
+                                font-size: 14px;
+                                line-height: 17px;
+                                font-family: $Inter-SemiBold;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-bot-2{
+                display: none;
+                align-items: center;
+                justify-content: space-between;
+                @include Res(m-9){
+                    display: flex;
+                }
+                    .btn-menu{
+                        height: 24px;
+                        width: 24px;
+                        position: relative;
+                        display: none;
+                        @include Res(m-9){
+                            display: block;
+                        }
+                        &::before{
+                            content: "";
+                            font-family: $font-anwesome;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            font-size: 24px;
+                        }
+                    }
+                    .menu{
+                        padding: 20px 30px;
+                            position: fixed;
+                            width: 350px;
+                            height: 100%;
+                            top: 0;
+                            background: #fff;
+                            z-index: 999;
+                            left: 0;
+                            display: flex;
+                            flex-direction: column;
+                            transform: translateX(-100%);
+                            -webkit-transition: all .3s ease-in-out;
+                            transition: all .3s ease-in-out;
+                            gap: 30px;
+                            .menu-list{
+                                order: 3;
+                                ul{
+                                    list-style: none;
+                                    margin: 0;
+                                    padding: 0;
+                                    display: block;
+                                    li{
+                                        padding: 30px 0;
+                                        position: relative;
+                                        @include Res(m-9){
+                                            padding: 10px 0;
+                                        }
+                                        &:hover{
+                                            &::before{
+                                                width: 100%;
+                                            }
+                                            .menu-dropdown{
+                                                display: block;
+                                            }
+                                        }
+                                        &::before{
+                                            position: absolute;
+                                            content: "";
+                                            height: 3px;
+                                            width: 0.01%;
+                                            background: $color-orange;
+                                            bottom: 0;
+                                            -webkit-transition: all .3s ease-in-out;
+                                            transition: all .3s ease-in-out;
+                                        }
+                                        a{
+                                            font-size: 14px;
+                                            font-family: $Inter-SemiBold;
+                                            color: $color-black;
+                                            text-decoration: none;
+                                            line-height: 17px;
+                                        }
+                                        .menu-dropdown{
+                                            display: none;
+                                                padding: 30px 25px 10px;
+                                            li{
+                                                padding: 0 0 20px;
+                                                &:nth-last-child(1){
+                                                    padding: 0;
+                                                }
+                                                &::before{
+                                                    display: none;
+                                                }
+                                                a{
+                                                    font-family: $Inter-Medium;
+                                                }
+                                            }            
+                                        }
+                                    }
+                                }
+                            }
+                            .logo-menu{
+                                display: none;
+                                order: 1;
+                                a{
+                                    text-decoration: none;
+                                    picture{
+                                        display: block;
+                                        position: relative;
+                                        width: 60%;
+                                        height: 0;
+                                        overflow: hidden;
+                                        padding-top: calc(0.28260 * 100%);
+                                        img{
+                                            position: absolute;
+                                            top: 0;
+                                            bottom: 0;
+                                            right: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: scale-down;
+                                        }
+                                    }
+                                }
+                                @include Res(m-9){
+                                    display: block;
+                                }
+                            }
+                            .search{
+                                order: 2;
+                                form{
+                                    display: flex;
+                                    gap: 10px;
+                                    align-items: center;
+                                    background: $color-gray;
+                                    border-radius: 30px;
+                                    padding: 15px 22px;
+                                    input{
+                                        background: unset;
+                                        outline: none;
+                                        font-size: 12px;
+                                        line-height: 15px;
+                                        color: $color-smoke;
+                                        font-family: $Inter-Regular;
+                                        border: none;
+                                        &::placeholder{
+                                            color: $color-smoke;
+                                            font-size: 12px;
+                                            font-family: $Inter-Regular;
+                                        }
+                                    }
+                                    picture{
+                                        line-height: 0;
+                                    }
+                                }
+                            }
+                            .close{
+                                display: none;
+                                width: 24px;
+                                height: 24px;
+                                position: absolute;
+                                top: 5%;
+                                right: 10%;
+                                @include Res(m-9){
+                                    display: block;
+                                }
+                                @include Res(m-4){
+                                    top: 8%;
+                                }
+                                &::before{
+                                    content: "";
+                                    font-family: $font-anwesome;
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    font-size: 28px;
+                                    color: $color-black;
+                                }
+                            }
+                            .contact-mobie{
+                                order: 4;
+                                @include Res(m-9){
+                                    display: block;
+                                    .v-top-socials{
+                                        display: flex;
+                                        gap: 10px;
+                                        justify-content: center;
+                                    }
+                                    .v-top-contact{
+                                        display: flex;
+                                        gap: 30px;
+                                        margin-bottom: 20px;
+                                        .mail,.phone{
+                                            display: flex;
+                                            gap: 5px;
+                                            align-items: center;
+                                            line-height: 0;
+                                            p{
+                                                margin: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                    .active-menu{
+                        transform: translateX(0%);
+                    }
+            }
+        }
+        .over-lay-mobie{
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1B1717;
+            opacity: 0.8;
+            z-index: 99;
+            display: none;
+        }
+        .active-overlay{
+            display: block;
+        }
+    }
+}

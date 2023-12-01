@@ -1,0 +1,678 @@
+@import 'commont';
+
+.news{
+    margin: 100px auto;
+    @include Res(m-14){
+        margin: 80px auto;
+    }
+    @include Res(m-14){
+        margin: 60px auto;
+    }
+    @include Res(m-4){
+        margin: 40px auto;
+    }
+    .news-title{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        @include Res(m-9){
+            width: 90%;
+        }
+        @include Res(m-4){
+            width: 100%;
+        }
+        h4{
+            font-size: 36px;
+            line-height: 44px;
+            font-family: $Inter-bold;
+            color:  $color-black;
+            margin: 0;
+            @include Res(m-14){
+                font-size: 30px;
+            }
+            @include Res(m-9){
+                font-size: 24px;
+            }
+            @include Res(m-4){
+                font-size: 20px;
+            }
+        }
+        p{
+            margin: 10px 0 0;
+            font-size: 16px;
+            font-family: $Inter-Regular;
+            color: $color-black;
+            line-height: 24px;
+            @include Res(m-9){
+                font-size: 14px;
+            }
+            @include Res(m-4){
+                font-size: 12px;
+            }
+        }
+    }
+    .news-wrapper{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 66% 1fr;
+        gap: 20px;
+        @include Res(m-14){
+            margin-top: 50px;
+        }
+        @include Res(m-9){
+            margin-top: 30px;
+            grid-template-columns: 1fr;
+        }
+        @include Res(m-4){
+            display: block;
+        }
+        .news-left{
+            .news-main{
+                picture{
+                    position: relative;
+                    display: block;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 0;
+                    padding-top: calc(0.503546 * 100%);
+                    border-radius: 10px;
+                    img{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .news-main-text{
+                    margin-top: 30px;
+                    width: 95%;
+                    @include Res(m-9){
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+                    h5{
+                        font-size: 30px;
+                        font-family: $Inter-bold;
+                        color: $color-black;
+                        margin: 0;
+                        line-height: 42px;
+                        @include Res(m-14){
+                            font-size: 24px;
+                        }
+                        @include Res(m-9){
+                            font-size: 18px;
+                        }
+                        @include Res(m-4){
+                            font-size: 16px;
+                            line-height: 28px;
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                        color: $color-black;
+                        font-family: $Inter-Regular;
+                        line-height: 24px;
+                        margin: 20px 0;
+                        @include Res(m-9){
+                            margin: 5px 0 20px;
+                            font-size: 14px;
+                        }
+                        @include Res(m-4){
+                            font-size: 12px;
+                        }
+                    }
+                    .date{
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        font-size: 14px;
+                        color: $color-orange;
+                        line-height: 17px;
+                    }
+                }
+            }
+            .news-main-detail{
+                margin-bottom: 50px;
+                @include Res(m-9){
+                    margin-bottom: 30px;
+                }
+                @include Res(m-4){
+                    margin-bottom: 10px;
+                }
+                .news-main-text-detail{
+                    margin: 0;
+                    h5{
+                        font-family: $Inter-SemiBold;
+                    }
+                    .orther{
+                        display: flex;
+                        gap: 50px;
+                        margin: 10px 0;
+                        .share{
+                            display: flex;
+                            align-items: center;
+                            text-decoration: none;
+                            gap: 10px;
+                            color: $color-black;
+                            font-size: 16px;
+                            font-family: $Inter-SemiBold ;
+                        }
+                        .date{
+                            margin: 0;
+                        }
+                    }
+                }
+                .text-decsription{
+                    margin: 30px 0 0;
+                    width: 95%;
+                    @include Res(m-4){
+                        margin: 15px 0 0;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-family: $Inter-Regular;
+                        color: $color-black;
+                        @include Res(m-9){
+                            font-size: 14px;
+                        }
+                        @include Res(m-4){
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .news-related{
+                width: 95%;
+                .news-related-wrapper{
+                    display: flex;
+                    gap: 40px ;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    @include Res(m-9){
+                        gap: 30px;
+                    }
+                    @include Res(m-4){
+                        gap: 10px;
+                    }
+                    .news-related{
+                        flex: 1;
+                        picture{
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            width: 100%;
+                            height: 0;
+                            padding-top: calc(0.596721 * 100%);
+                            border-radius: 10px;
+                            img{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    .news-related-text{
+                        flex: 1.5;
+                        h5{
+                            font-size: 18px;
+                            font-family: $Inter-SemiBold;
+                            color: $color-black;
+                            margin: 0;
+                            line-height: 26px;  
+                            text-overflow: ellipsis;
+                                overflow: hidden;
+                                -webkit-line-clamp: 3;
+                                -moz-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                -moz-box-orient: vertical;
+                                display: -webkit-box;
+                            @include Res(m-9){
+                                font-size: 16px;
+                            }
+                            @include Res(m-4){
+                                -webkit-line-clamp: 2;
+                                -moz-line-clamp: 2;
+                                font-size: 14px;
+                                line-height: 22px;
+                            } 
+                        }
+                        p{
+                            margin: 15px 0 0;
+                            font-size: 14px;
+                            font-family: $Inter-Regular;
+                            color: $color-orange;
+                            line-height: 17px;
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            @include Res(m-4){
+                                font-size: 12px;
+                                margin: 5px 0 0;
+                            }
+                        }
+                    }
+                }
+                .news-related-title{
+                    margin-bottom: 30px;
+                    @include Res(m-4){
+                        margin-bottom: 20px;
+                    }
+                    h4{
+                        margin: 0;
+                        font-size: 30px;
+                        line-height: 42px;
+                        font-family: $Inter-SemiBold;
+                        color: $color-black;
+                        @include Res(m-14){
+                            font-size: 24px;
+                        }
+                        @include Res(m-9){
+                            font-size: 18px;
+                        }
+                        @include Res(m-4){
+                            font-size: 16px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+            .subscribe{
+                margin: 30px 0;
+                background-color: $color-orange;
+                display: flex;
+                align-items: center;
+                padding: 35px;
+                border-radius: 10px;
+                justify-content: space-between;
+                @include Res(m-14){
+                    padding: 30px;
+                }
+                @include Res(m-9){
+                    padding: 20px;
+                    margin: 20px 0;
+                }
+                @include Res(m-4){
+                    padding: 10px 20px;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                h5{
+                    font-size: 20px;
+                    line-height: 42px;
+                    font-family: $Inter-SemiBold;
+                    color: $color-white;
+                    margin: 0;
+                    @include Res(m-14){
+                        font-size: 18px;
+                    }
+                    @include Res(m-9){
+                        font-size: 16px;
+                    }
+                    @include Res(m-4){
+                        font-size: 14px;
+                        line-height: 28px;
+                    }
+                }
+                form{
+                    border-radius: 30px;
+                    overflow: hidden;
+                    background: #F0F1F2;
+                    width: 55%;
+                    display: flex;
+                    justify-content: space-between;
+                    @include Res(m-14){
+                        width: 60%;
+                    }
+                    @include Res(m-4){
+                        width: 100%;
+                    }
+                    input{
+                        outline: none;
+                        background: none;
+                        border: none;
+                        padding: 15px 22px;
+                        font-size: 14px;
+                        line-height: 17px;
+                        font-family: $Inter-Regular;
+                        color: $color-smoke;
+                        &::placeholder{
+                            font-size: 14px;
+                            color: $color-smoke;
+                            font-family: $Inter-Regular;
+                        }
+                        @include Res(m-4){
+                            width: 65%;
+                            padding: 10px 20px;
+                        }
+                    }
+                    button{
+                        padding: 15px 50px;
+                        border: none;
+                        border-radius: 30px;
+                        color: $color-smoke;
+                        background: $color-black;
+                        @include Res(m-4){
+                            padding: 10px 30px;
+                        }
+                    }
+                }
+            }
+            .news-orther{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+                margin-bottom: 50px;
+                @include Res(m-9){
+                    margin-bottom: 30px;
+                }
+                @include Res(m-4){
+                    gap: 10px;
+                    margin-bottom: 20px;
+                }
+                .news-orther-child{
+                    picture{
+                        width: 100%;
+                        position: relative;
+                        display: block;
+                        overflow: hidden;
+                        border-radius: 10px;
+                        height: 0;
+                        padding-top: calc(0.595641 * 100%);
+                        img{
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .news-orther-child-text{
+                        margin-top: 30px;
+                        @include Res(m-9){
+                            margin-top: 20px;
+                        }
+                        @include Res(m-4){
+                            margin-top: 10px;
+                        }
+                        h5{
+                            font-size: 18px;
+                            color: $color-black;
+                            line-height: 26px;
+                            font-family: $Inter-SemiBold;
+                            margin:  0 0 15px;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            -webkit-line-clamp: 3;
+                            -moz-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                            -moz-box-orient: vertical;
+                            display: -webkit-box;
+                            @include Res(m-9){
+                                font-size: 16px;
+                                margin:  0 0 10px;
+                            }
+                            @include Res(m-4){
+                                -webkit-line-clamp: 2;
+                                -moz-line-clamp: 2;
+                                font-size: 14px;
+                                line-height: 22px;
+                                margin:  0 0 5px;
+                            }
+                        }
+                        p{
+                            font-size: 14px;
+                            font-family: $Inter-Regular;
+                            color: $color-orange;
+                            line-height: 17px;
+                            display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            @include Res(m-4){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .page-number{
+                ul{
+                    display: flex;
+                    list-style: none;
+                    gap: 10px;
+                    align-items: center;
+                    padding: 0;
+                    @include Res(m-4){
+                        justify-content: center;
+                    }
+                    li{
+                        padding: 7px 13px;
+                        border: 1px solid #CDDEE8;
+                        border-radius: 50%;
+                        position: relative;
+                        font-size: 14px;
+                        line-height: 21px;
+                        font-family: $Inter-Medium;
+                        color: #1B2126;
+                        cursor: pointer;
+                        @include Res(m-4){
+                            font-size: 12px;
+                            padding: 5px 11px;
+                        }
+                        &:hover{
+                            background: #0C1A41;
+                            color: #ffffff;
+                        }
+                        &:first-child{
+                            border: none;
+                            &::before{
+                                content: "";
+                                font-family: $font-anwesome;
+        
+                            }
+                        }
+                        &:last-child{
+                            border: none;
+                            &::before{
+                                content: "";
+                                font-family: $font-anwesome;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .news-right{
+            border-radius: 10px;
+            overflow: hidden;
+            h4{
+                margin: 0;
+                font-size: 20px;
+                line-height: 26px;
+                color: $color-black;
+                font-family: $Inter-SemiBold;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #D9D9D9;
+                @include Res(m-4){
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                }
+            }
+            .news-category{
+                background: #F5F0EA;
+                padding: 43px 30px 1px;
+                ul{
+                    margin: 30px 0;
+                    padding: 0;
+                    list-style: none;
+                    @include Res(m-4){
+                        margin: 15px 0 0;
+                    }
+                    li{
+                        position: relative;
+                        margin-bottom: 20px;
+                        padding-left: 30px;
+                        @include Res(m-4){
+                            margin-bottom: 10px;
+                        }
+                        &::before{
+                            content: "";
+                            font-family: $font-anwesome;
+                            color: $color-orange;
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: 0;
+                        }
+                        a{
+                            text-decoration: none;
+                            font-size: 16px;
+                            color: $color-black;
+                            font-family: $Inter-Medium;
+                            @include Res(m-4){
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .hot-news{
+                background: #F5F0EA;
+                padding: 0 30px 1px;
+                @include Res(m-4){
+                    padding: 0 20px 1px;
+                }
+                .hot-news-wrapper{
+                    margin-top: 25px;
+                    @include Res(m-9){
+                        display: flex;
+                        gap: 20px;
+                    }
+                    @include Res(m-4){
+                        gap: 10px;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                    .hot-news-child{
+                        margin-bottom: 35px;
+                        @include Res(m-9){
+                            margin-bottom: 20px;
+                        }
+                        @include Res(m-4){
+                            margin-bottom: 10px;
+                            width: 48%;
+                        }
+                        picture{
+                            display: block;
+                            position: relative;
+                            overflow: hidden;
+                            border-radius: 10px;
+                            width: 100%;
+                            height: 0;
+                            padding-top: calc(0.696883 * 100%);
+                            img{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .hot-news-child-text{
+                            margin-top: 30px;
+                            @include Res(m-9){
+                                margin-top: 20px;
+                            }
+                            @include Res(m-4){
+                                margin-top: 10px;
+                            }
+                            p{
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                font-size: 14px;
+                                color: #5B5B5B;
+                                line-height: 17px;
+                                margin: 0;
+                                @include Res(m-4){
+                                    font-size: 12px;
+                                }
+                            }
+                            h5{
+                                margin: 15px 0 0;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: $color-black;
+                                font-family: $Inter-SemiBold;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                -webkit-line-clamp: 3;
+                                -moz-line-clamp: 3;
+                                -webkit-box-orient: vertical;
+                                -moz-box-orient: vertical;
+                                display: -webkit-box;
+                                @include Res(m-9){
+                                    -webkit-line-clamp: 2;
+                                    -moz-line-clamp: 2;
+                                    font-size: 14px;
+                                }
+                                @include Res(m-4){
+                                    font-size: 12px;
+                                    margin: 5px 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .hot-search{
+                background: #F5F0EA;
+                padding: 0px 30px 45px;
+                border-radius: 0 0 10px 10px;
+                @include Res(m-4){
+                    padding: 0px 20px 20px;
+                }
+                ul{
+                    margin: 30px 0 0;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                    @include Res(m-4){
+                        margin: 15px 0 0;
+                    }
+                    li{
+                        padding: 8px 20px;
+                        border-radius: 55px;
+                        background: #454545;
+                        a{
+                            color: $color-white;
+                            text-decoration: none;
+                            font-size: 14px;
+                            line-height: 17px;
+                            font-family: $Inter-Medium;
+                            @include Res(m-4){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

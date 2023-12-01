@@ -1,0 +1,23 @@
+Thiết lập:
++ Admin (được Wecan sử dụng):
+    -   Có mọi chức năng được
+    -   Tạo được các tài khoản phân quyền Ban giám đốc (Tài khoản của các shop)
+    -   Tạo được các tài khoản phân quyền quản lý và phân quyền nhân viên tuy nhiên phải chọn thuộc tài khoản của shop chỉ định
++ Ban Giám đốc
+    -   Có mọi chức năng
+    -   Tạo được các tài khoản phân quyền quản lý và phân quyền nhân viên thuộc tài khoản đó
++ Quản lý
+    -   Có các chức năng cơ bản tuy nhiên chỉ có thể tạo sửa nhưng không được xóa.
++ Nhân viên
+    -   Chỉ có chức năng bán hàng
+    -   Xem báo cáo doanh số
+
+
+
+
+
+Sản phẩm : Yêu cầu phân biệt theo shop id (Done)
+Khách hàng: Yêu cầu phân biệt theo shop id (Done)
+Nhà cung cấp : Yêu cầu phân biệt theo shop id (Done)
+Sản phẩm : Yêu cầu phân biệt theo shop id
+Sản phẩm : Yêu cầu phân biệt theo shop id

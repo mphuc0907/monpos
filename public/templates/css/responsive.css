@@ -1,0 +1,290 @@
+.customers{
+    padding: 35px 30px;
+}
+section.main div.customers .modal-header{
+    padding: 0;
+    border: none;
+    margin-bottom: 35px;
+}
+.customers .modal-body{
+    padding: 0;
+}
+.customers .modal-body .form-group{
+    display: flex;
+    align-items: center;
+}
+.customers .modal-body .form-group input[type=text], .customers .modal-body .form-group input[type=password]{
+    padding: 15px 30px;
+    border: 1px solid rgba(129, 129, 129, 0.2);
+    border-radius: 15px !important;
+    height: unset;
+}
+section.main div.main-content div.report .report-box .infobox-icon i.fa{
+    color: #0B87C9;
+}
+section.main div.main-content div.report .report-box .infobox-data h3.infobox-title{
+    color: #0B87C9;
+}
+section.main div.sidebar.sidebar-fixed ul{
+    overflow: auto;
+    max-height: 100%;
+}
+section.main div.sidebar.sidebar-fixed ul::-webkit-scrollbar{
+    width: 3px;
+}
+.orders .orders-content .date{
+    padding: 15px 0;
+}
+.orders .orders-content .date .order-btn-calendar{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px 20px ;
+}
+section.main div.main-content div.orders div.order-btn-calendar button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px !important;
+}
+.orders .orders-content .form-control{
+    height: unset;
+    border-radius: 15px !important;
+}
+.orders .orders-content .btn-primary{
+    background: #35149A;
+    border-radius: 15px;
+    padding: 7px 15px;
+}
+.orders .orders-content .input-group input{
+    height: unset;
+    border-radius: 15px !important;
+    padding: 8px 30px;
+    text-align: start;
+}
+.orders .orders-content .input-group .input-group-addon{
+    background: unset;
+    border: unset;
+}
+section.main div.main-content div.orders div.order-btn-calendar button:hover{
+    border: none;
+    background: #35149A;
+    color: #FFFFFF;
+}
+section.main div.main-content div.orders div.order-btn-calendar button:focus{
+    border: none;
+    background: #35149A;
+    color: #FFFFFF;
+}
+section.main div.main-content div.panel-action div.right-action button.btn{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background: #EFBC2B;
+    color: #1E1E1E;
+}
+section.main div.main-content div.panel-action div.right-action button.btn i{
+    padding-right: 10px;
+}
+section.main div.main-content div.alert{
+    margin-top: 20px;
+    padding: 25px 30px;
+    background: #FFFFFF;
+    border-radius: 14px;
+}
+section.main div.main-content .sm-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+section.main div.main-content .sm-info span{
+    font-size: 16px;
+    color: #35149A;
+    font-weight: 500;
+}
+.products .products-content .form-group .form-control{
+    border-radius: 15px !important;
+    height: unset;
+    padding: 10px 20px;
+}
+.products .products-content .form-group .btn{
+    padding: 11px 20px;
+    border-radius: 15px !important;
+    background: #35149A;
+}
+section.main div.main-content .panel-sear .form-group.form-control{
+    border-radius: 15px !important;
+    height: unset;
+    padding: 10px 20px;
+}
+.inventory .inventory-content .form-group .form-control{
+    border-radius: 15px !important;
+    height: unset;
+    padding: 10px 20px;
+}
+.inventory .inventory-content .form-group .btn{
+    padding: 11px 20px;
+    border-radius: 15px !important;
+    background: #35149A;
+}
+.content{
+    margin: 30px 0;
+}
+.customer-supplier .tab-content .btn{
+    padding: 10px 15px;
+    background: #35149A;
+    border-radius: 15px !important;
+}
+.customer-supplier .tab-content .form-group .form-control{
+    padding: 8px 30px;
+    height: unset;
+    border-radius: 15px !important;
+}
+.modal-dialog .modal-content .btn-crcust{
+    padding: 10px 20px;
+    background: #55AB67;
+    color: #FFFFFF;
+    border-radius: 15px !important;
+    font-size: 16px;
+    line-height: 19px;
+}
+.modal-dialog .modal-content .btn-close{
+    padding: 10px 25px;
+    background: #FFFFFF;
+    color: #FF4040;
+    border: 1px solid #FF4040;
+    border-radius: 15px !important;
+    font-size: 16px;
+    line-height: 19px;
+}
+.p-0{
+    padding: 0 !important;
+}
+.radio-content{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+.title h2, .title h3, .title h4, .title h5, .title h6{
+    margin: 0 0 40px;
+    font-size: 22px;
+    line-height: 26px;
+}
+.customer-supplier .customer-info{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 50px 30px;
+}
+.customer-supplier .customer-info .form-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-dialog .modal-content{
+    border-radius: 20px;
+    padding: 35px 30px;
+}
+section.main div.main-content .modal-header{
+    border: none;
+    padding: 0;
+    margin-bottom: 35px;
+}
+.modal-dialog .modal-content .modal-body{
+    padding: 0;
+}
+.modal-dialog .modal-content .modal-body .form-horizontal .form-group{
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+}
+.modal-dialog .modal-content .modal-body .form-horizontal .form-group .form-control{
+    height: unset;
+    padding: 15px 30px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B3B3B3;
+    border-radius: 15px !important;
+}
+section.main div.main-content .modal-footer{
+    padding: 0;
+}
+section.main div.main-content .modal-footer .btn-crsup{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #55AB67;
+    font-size: 16px;
+    line-height: 19px;
+}
+section.main div.main-content .modal-footer .btn-phieuchi{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #55AB67;
+    font-size: 16px;
+    line-height: 19px;
+}
+/*.orders .orders-content .pull-right{*/
+/*    display: none;*/
+/*}*/
+.orders .orders-content .right{
+    box-shadow: 0px 0px 6px 0px #5A36CC1A;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 40px 50px;
+}
+.orders .orders-content .right .morder-info .tab-contents .input-group{
+    display: block;
+    text-align: end;
+}
+.orders .orders-content .right .morder-info .tab-contents .total-money{
+    display: block;
+    text-align: end;
+}
+.orders .orders-content .right .morder-info .tab-contents .total-after-discount{
+    display: block;
+    text-align: end;
+}
+.orders .orders-content .right .morder-info .tab-contents .debt{
+    display: block;
+    text-align: end;
+}
+.orders .orders-content .right .morder-info .tab-contents .discount-order{
+    border: none;
+    padding: 0;
+}
+.orders .orders-content .right .morder-info .tab-contents .customer-pay{
+    border: none;
+    padding: 0;
+}
+section.main div.main-content div.orders .lighter{
+    border: none;
+    font-size: 22px;
+    line-height: 26px;
+    color: #2F2F2F;
+}
+section.main div.main-content div.orders .lighter i{
+    display: none;
+}
+.main .orders-act .right{
+    box-shadow: 0px 0px 6px 0px #5A36CC1A;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 40px 50px;
+}
+@media  screen and (max-width: 1600px) {
+    section.main div.main-content{
+        margin-left: 80px;
+    }
+    section.main div.main-content .widget .widget-body [class*=col-]{
+        font-size: 14px;
+        padding: 0 10px 20px ;
+    }
+    section.main div.main-content .widget .widget-body .data{
+        font-size: 14px;
+    }
+    section.main div.main-content div.panel-action{
+        top: 80px;
+    }
+    section.main div.main-content div.panel-action div.left-action{
+        margin-left: 70px;
+    }
+    section.main div.main-content div.panel-action h5{
+        margin-left: 70px;
+    }
+} 

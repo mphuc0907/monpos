@@ -1,0 +1,186 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Inter-Bold;
+  src: url("./../font/Inter-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: Inter-Black;
+  src: url("./../font/Inter-Black.ttf") format("truetype"); }
+@font-face {
+  font-family: Inter-ExtraBold;
+  src: url("./../font/Inter-ExtraBold.ttf") format("truetype"); }
+@font-face {
+  font-family: Inter-ExtraLight;
+  src: url("./../font/Inter-ExtraLight.ttf") format("truetype"); }
+@font-face {
+  font-family: Inter-Light;
+  src: url("./../font/Inter-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: Inter-Medium;
+  src: url("./../font/Inter-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: Inter-Regular;
+  src: url("./../font/Inter-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url("./../font/Inter-SemiBold.ttf") format("truetype"); }
+@font-face {
+  font-family: Inter-Thin;
+  src: url("./../font/Inter-Thin.ttf") format("truetype"); }
+@font-face {
+  font-family: font-anwesome;
+  src: url("./../font/Font Awesome 6 Solid-900.ttf") format("truetype"); }
+@media only screen and (min-width: 1400px) and (max-width: 1920px) {
+  .container {
+    max-width: 1280px !important;
+    width: 1280px !important; } }
+body {
+  margin: 0;
+  padding: 0; }
+
+.search-news {
+  margin: 100px auto; }
+  @media only screen and (max-width: 1440px) {
+    .search-news {
+      margin: 80px auto; } }
+  @media only screen and (max-width: 991px) {
+    .search-news {
+      margin: 60px auto; } }
+  @media only screen and (max-width: 480px) {
+    .search-news {
+      margin: 40px auto; } }
+  .search-news .keyword {
+    margin-bottom: 50px; }
+    @media only screen and (max-width: 1440px) {
+      .search-news .keyword {
+        margin-bottom: 40px; } }
+    @media only screen and (max-width: 991px) {
+      .search-news .keyword {
+        margin-bottom: 30px; } }
+    @media only screen and (max-width: 480px) {
+      .search-news .keyword {
+        margin-bottom: 20px; } }
+    .search-news .keyword h4 {
+      color: #000000;
+      font-family: Inter-Medium, sans-serif;
+      margin: 0;
+      font-size: 30px;
+      line-height: 36px; }
+      @media only screen and (max-width: 1440px) {
+        .search-news .keyword h4 {
+          font-size: 24px; } }
+      @media only screen and (max-width: 991px) {
+        .search-news .keyword h4 {
+          font-size: 18px; } }
+      .search-news .keyword h4 span {
+        font-family: Inter-Bold, sans-serif; }
+  .search-news .list-search {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px; }
+    @media only screen and (max-width: 991px) {
+      .search-news .list-search {
+        margin-bottom: 40px; } }
+    @media only screen and (max-width: 480px) {
+      .search-news .list-search {
+        margin-bottom: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; } }
+    .search-news .list-search .child picture {
+      width: 100%;
+      height: 0;
+      padding-top: calc(0.595641 * 100%);
+      position: relative;
+      display: block;
+      overflow: hidden;
+      border-radius: 10px; }
+      .search-news .list-search .child picture img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .search-news .list-search .child .child-text {
+      margin-top: 30px; }
+      @media only screen and (max-width: 1440px) {
+        .search-news .list-search .child .child-text {
+          margin-top: 20px; } }
+      @media only screen and (max-width: 480px) {
+        .search-news .list-search .child .child-text {
+          margin-top: 10px; } }
+      .search-news .list-search .child .child-text .date {
+        display: flex;
+        gap: 10px;
+        color: #5B5B5B;
+        font-family: Inter-Regular, sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+        margin: 0; }
+        @media only screen and (max-width: 480px) {
+          .search-news .list-search .child .child-text .date {
+            font-size: 12px; } }
+      .search-news .list-search .child .child-text h5 {
+        color: #000000;
+        margin: 15px 0 0;
+        font-family: Inter-SemiBold, sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        -moz-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        display: -webkit-box; }
+        @media only screen and (max-width: 991px) {
+          .search-news .list-search .child .child-text h5 {
+            font-size: 16px;
+            margin: 10px 0 0;
+            -webkit-line-clamp: 2;
+            -moz-line-clamp: 2; } }
+        @media only screen and (max-width: 991px) {
+          .search-news .list-search .child .child-text h5 {
+            font-size: 14px;
+            margin: 5px 0 0; } }
+  .search-news .page-number ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+    padding: 0; }
+    @media only screen and (max-width: 991px) {
+      .search-news .page-number ul {
+        justify-content: center; } }
+    .search-news .page-number ul li {
+      padding: 7px 13px;
+      border: 1px solid #CDDEE8;
+      border-radius: 50%;
+      position: relative;
+      font-size: 14px;
+      line-height: 21px;
+      font-family: Inter-Medium, sans-serif;
+      color: #1B2126;
+      cursor: pointer; }
+      @media only screen and (max-width: 480px) {
+        .search-news .page-number ul li {
+          font-size: 12px;
+          padding: 5px 11px; } }
+      .search-news .page-number ul li:hover {
+        background: #0C1A41;
+        color: #ffffff; }
+      .search-news .page-number ul li:first-child {
+        border: none; }
+        .search-news .page-number ul li:first-child::before {
+          content: "";
+          font-family: font-anwesome, sans-serif; }
+      .search-news .page-number ul li:last-child {
+        border: none; }
+        .search-news .page-number ul li:last-child::before {
+          content: "";
+          font-family: font-anwesome, sans-serif; }
+
+/*# sourceMappingURL=search.css.map */

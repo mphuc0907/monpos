@@ -1,0 +1,128 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url("./../font/Inter-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: Inter-Black;
+    src: url("./../font/Inter-Black.ttf") format('truetype');
+}
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url("./../font/Inter-ExtraBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: Inter-ExtraLight;
+    src: url("./../font/Inter-ExtraLight.ttf") format('truetype');
+}
+@font-face {
+    font-family: Inter-Light;
+    src: url("./../font/Inter-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: Inter-Medium;
+    src: url("./../font/Inter-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url("./../font/Inter-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url("./../font/Inter-SemiBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: Inter-Thin;
+    src: url("./../font/Inter-Thin.ttf") format('truetype');
+}
+@font-face {
+    font-family: font-anwesome;
+    src: url("./../font/Font Awesome 6 Solid-900.ttf") format("truetype"); 
+}
+
+$Inter-black : Inter-Black, sans-serif;
+$Inter-bold : Inter-Bold, sans-serif;
+$Inter-ExtraBold : Inter-ExtraBold, sans-serif;
+$Inter-ExtraLight : Inter-ExtraLight, sans-serif;
+$Inter-Light : Inter-Light, sans-serif;
+$Inter-Medium : Inter-Medium, sans-serif;
+$Inter-Regular : Inter-Regular, sans-serif;
+$Inter-SemiBold : Inter-SemiBold, sans-serif;
+$Inter-Thin : Inter-Thin, sans-serif;
+$font-anwesome : font-anwesome, sans-serif;
+
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-red: #E53D23;
+$color-orange: #E95A13;
+$color-gray: #F0F1F2;
+$color-gray-2: #E8E8E8;
+$color-gray-3: #EFF1F3;
+$color-smoke: #9A9EA6;
+$color-smoke-2: #5B5B5B;
+$color-smoke-3: #E3EBFD;
+$color-blue: #171940;
+
+@media only screen and(min-width: 1400px) and(max-width: 1920px){
+    .container{
+        max-width: 1280px !important;
+        width: 1280px !important;
+    }
+}
+$m-17: 1700px;
+$m-15: 1500px;
+$m-14: 1440px;
+$m-13: 1366px;
+$m-12: 1240px;
+$m-11: 1199px;
+$m-9: 991px;
+$m-7: 768px;
+$m-6: 667px;
+$m-4: 480px;
+@mixin Res($man) {
+  @if $man == m-17 {
+   @media only screen and (min-width: $m-15) and (max-width: $m-17) {
+    @content; 
+  } 
+}
+@else if $man == m-14 {
+  @media only screen and (max-width: $m-14) {
+    @content; 
+  } 
+}
+@else if $man == m-12 {
+  @media only screen and (max-width: $m-12) {
+    @content; 
+  } 
+}
+@else if $man == m-11 {
+  @media only screen and (max-width: $m-11) {
+    @content; 
+  } 
+}
+@else if $man == m-9 {
+  @media only screen and (max-width: $m-9) {
+    @content; 
+  } 
+}
+@else if $man == m-7 {
+  @media only screen and (max-width: $m-7) {
+    @content; 
+  } 
+}
+@else if $man == m-6 {
+  @media only screen and (max-width: $m-6) {
+    @content; 
+  } 
+}
+@else if $man == m-4 {
+  @media only screen and (max-width: $m-4) {
+    @content; 
+  } 
+}
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
